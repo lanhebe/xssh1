@@ -26,8 +26,10 @@ nohup ./x-ui &
 echo "nezha 面板"
 wget https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh
 mv install.sh nezha.sh
+echo "nezha 面板 ls "
+ls
 chmod +x nezha.sh
-./nezha.sh install_agent
+./nezha.sh install_agent $NEZHA_IP 12728 $NEZHAAGENT
 # curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && ./nezha.sh install_agent kra2.xyzone.eu.org 12728 de2e65cb080ec0a2a4
 # 0
 echo "nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &"
