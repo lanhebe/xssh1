@@ -1,8 +1,6 @@
 #!/bin/bash
 source /app/config.sh
 
-service nginx start
-
 # echo "安装 htop等"
 # apt-get install htop -y
 echo "安装 x-ui"
@@ -39,8 +37,8 @@ nohup ./x-ui &
 # echo "nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &"
 # nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
 
-service nginx start
-# nginx -g 'daemon off;'
+# service nginx start
+nginx -g 'daemon off;'
 
 # echo "set ngrok token: $NGROK_TOKEN"
 # ngrok authtoken $NGROK_TOKEN
