@@ -15,13 +15,13 @@ mv x-ui/ /usr/local/
 # systemctl restart x-ui
 # echo "复制数据库"
 # # cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
-# # nginx -s reload
+# nginx -s reload
 # # mkdir /etc/x-ui/
 # # cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
-# cd /usr/local/x-ui/bin
-# nohup ./xray-linux-amd64 &
-# cd ../
-# nohup ./x-ui &
+cd /usr/local/x-ui/bin
+nohup ./xray-linux-amd64 &
+cd ../
+nohup ./x-ui &
 # # cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
 # echo "nezha 面板"
 # wget https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh
