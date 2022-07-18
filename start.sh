@@ -19,8 +19,12 @@ mv x-ui/ /usr/local/
 # # mkdir /etc/x-ui/
 # # cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
 cd /usr/local/x-ui/bin
+echo "启动xray"
 nohup ./xray-linux-amd64 &
 cd ../
+echo "启动面板"
+chmod +x ./x-ui
+ls
 nohup ./x-ui &
 # # cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
 # echo "nezha 面板"
