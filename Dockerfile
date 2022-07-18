@@ -11,7 +11,6 @@ RUN set -ex\
     && apt autoremove -y
     
 EXPOSE 80
-EXPOSE 81
 
 COPY ./start.sh /app/
 COPY  www /usr/share/nginx/html/
