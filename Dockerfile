@@ -13,7 +13,10 @@ EXPOSE 81
 
 COPY ./start.sh /app/
 COPY  www /usr/share/nginx/html/
+RUN mkdir /etc/x-ui/
 COPY x-ui/db/x-ui.db /etc/x-ui/
+COPY x-ui/default.conf /etc/nginx/conf.d/
+
 RUN ls /usr/share/nginx/html/
 RUN ls /app/
 RUN chmod +x /app/start.sh
