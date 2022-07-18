@@ -1,7 +1,7 @@
 #!/bin/bash
 source /app/config.sh
 
-service nginx start
+# service nginx start
 
 # echo "安装 htop等"
 # apt-get install htop -y
