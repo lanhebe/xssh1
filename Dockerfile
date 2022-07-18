@@ -1,12 +1,10 @@
-# FROM debian:sid
-
-FROM ubuntu:18.04
+FROM debian:sid
 
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
     && apt install -y wget curl unzip qrencode\
-    && apt install -y shadowsocks-libev\
+#     && apt install -y shadowsocks-libev\
     && apt install -y nginx\
     && apt autoremove -y
     
