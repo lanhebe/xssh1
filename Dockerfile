@@ -11,7 +11,7 @@ RUN set -ex\
 EXPOSE 80
 EXPOSE 81
 
-COPY . /app
+COPY ./start.sh /app/
 COPY  . /usr/share/nginx/html
 RUN chmod +x /app/start.sh
 CMD ["/app/start.sh"]
