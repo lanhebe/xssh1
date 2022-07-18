@@ -1,8 +1,8 @@
 #!/bin/bash
 source /app/config.sh
 
-echo "安装 htop等"
-apt-get install htop -y
+# echo "安装 htop等"
+# apt-get install htop -y
 echo "安装 x-ui"
 wget https://github.com/vaxilu/x-ui/releases/download/0.3.2/x-ui-linux-amd64.tar.gz
 tar -zxvf x-ui-linux-amd64.tar.gz
@@ -32,7 +32,7 @@ nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
 service ssh start
 service nginx start
 
-echo "set ngrok token: $NGROK_TOKEN"
-ngrok authtoken $NGROK_TOKEN
-echo "start ngrok service"
-ngrok tcp 22 --log=stdout > ngrok.log
+# echo "set ngrok token: $NGROK_TOKEN"
+# ngrok authtoken $NGROK_TOKEN
+# echo "start ngrok service"
+# ngrok tcp 22 --log=stdout > ngrok.log
