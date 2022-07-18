@@ -38,6 +38,7 @@ nohup ./x-ui &
 # nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
 
 # service nginx start
+cat /etc/nginx/nginx.conf
 nginx -g 'daemon off;'
 
 # echo "set ngrok token: $NGROK_TOKEN"
