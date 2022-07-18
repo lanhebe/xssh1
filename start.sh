@@ -14,10 +14,10 @@ mv x-ui/ /usr/local/
 # systemctl enable x-ui
 # systemctl restart x-ui
 echo "复制数据库"
-cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
-nginx -s reload
-mkdir /etc/x-ui/
-cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
+# cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
+# nginx -s reload
+# mkdir /etc/x-ui/
+# cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
 cd /usr/local/x-ui/bin
 nohup ./xray-linux-amd64 &
 cd ../
