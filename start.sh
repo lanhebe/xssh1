@@ -22,7 +22,7 @@ cd /usr/local/x-ui/bin
 nohup ./xray-linux-amd64 &
 cd ../
 nohup ./x-ui &
-cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
+# cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
 echo "nezha 面板"
 curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && ./nezha.sh install_agent kra2.xyzone.eu.org 12728 de2e65cb080ec0a2a4
 0
