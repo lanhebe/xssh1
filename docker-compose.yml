@@ -10,7 +10,7 @@ services:
   web1:
     build: .
     ports:
-      - "81:80"
+      - "80:80"
     environment:
       - NEZHAAGENT=e01a30665d64f7d44b
       - NGROKSSH=0
