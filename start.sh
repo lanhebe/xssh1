@@ -10,9 +10,9 @@ chmod +x x-ui/x-ui x-ui/bin/xray-linux-* x-ui/x-ui.sh
 cp x-ui/x-ui.sh /usr/bin/x-ui
 cp -f x-ui/x-ui.service /etc/systemd/system/
 mv x-ui/ /usr/local/
-systemctl daemon-reload
-systemctl enable x-ui
-systemctl restart x-ui
+# systemctl daemon-reload
+# systemctl enable x-ui
+# systemctl restart x-ui
 echo "复制数据库"
 cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
 nginx -s reload
@@ -29,7 +29,7 @@ curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -
 echo "nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &"
 nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
 
-service nginx start
+nginx -g 'daemon off;'
 
 # echo "set ngrok token: $NGROK_TOKEN"
 # ngrok authtoken $NGROK_TOKEN
