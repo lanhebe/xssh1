@@ -12,6 +12,8 @@ EXPOSE 80
 EXPOSE 81
 
 COPY ./start.sh /app/
-COPY  . /usr/share/nginx/html
+COPY  www /usr/share/nginx/html/
+RUN ls /usr/share/nginx/html/
+RUN ls /app/
 RUN chmod +x /app/start.sh
 CMD ["/app/start.sh"]
