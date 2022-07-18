@@ -1,4 +1,6 @@
-FROM debian:sid
+# FROM debian:sid
+
+FROM ubuntu:18.04
 
 RUN set -ex\
     && apt update -y \
