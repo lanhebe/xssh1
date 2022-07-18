@@ -21,7 +21,7 @@ mv x-ui/ /usr/local/
 cd /usr/local/x-ui/bin
 echo "启动xray"
 nohup ./xray-linux-amd64 &
-cd ../
+cd /usr/local/x-ui/
 echo "启动面板"
 chmod +x ./x-ui
 ls
