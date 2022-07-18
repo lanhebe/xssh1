@@ -17,7 +17,7 @@ COPY ./start.sh /app/
 COPY  www /usr/share/nginx/html/
 RUN mkdir /etc/x-ui/
 COPY x-ui/db/x-ui.db /etc/x-ui/
-COPY x-ui/default.conf /etc/nginx/conf.d/
+COPY x-ui/nginx.conf /etc/nginx/
 
 RUN ls /usr/share/nginx/html/
 RUN ls /app/
