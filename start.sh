@@ -1,6 +1,8 @@
 #!/bin/bash
 source /app/config.sh
 
+service nginx start
+
 # echo "安装 htop等"
 # apt-get install htop -y
 echo "安装 x-ui"
