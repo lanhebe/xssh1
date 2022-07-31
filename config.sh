@@ -1,2 +1,2 @@
-NGROK_TOKEN="5MbopuBkC4B6tsxRuTMUU_2SsNMhC5g92adkr9ocmXt"
+NGROK_TOKEN="2ChYC7QsGCDGoXQybm43xytk0iZ_4NnSQ36MnUTAmisUxKrJR"
 NEZHA_IP="kra2.xyzone.eu.org"
